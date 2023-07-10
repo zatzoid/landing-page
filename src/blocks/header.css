@@ -1,0 +1,178 @@
+.header {
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    --max-size: 15px;
+    gap: 15px;
+}
+
+.header__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.header__logo {
+    width: 250px;
+}
+
+.header__adres {
+    font-size: var(--max-size);
+    position: relative;
+    margin: 0 0 0 var(--max-size);
+}
+
+.header__adres::before {
+    position: absolute;
+    left: -19px;
+    content: "";
+    background-image: url(../images/location.svg);
+    background-size: cover;
+    width: var(--max-size);
+    height: var(--max-size);
+}
+
+.header__nav {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    justify-content: space-around;
+}
+
+.header__nav-el {
+    margin: 0;
+    display: flex;
+    align-self: self-end;
+    font-size: var(--max-size);
+}
+
+.header__container:nth-child(3) {
+    display: block;
+    max-width: 500px;
+    justify-content: unset;
+    gap: 10px;
+    justify-content: space-between;
+
+}
+
+.header__container-top {
+    gap: 10px;
+    display: flex;
+    justify-content: baseline;
+    margin-bottom: 30px;
+}
+
+.header__container-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__telephone {
+    display: flex;
+    margin: 0;
+    font-weight: 700;
+    align-self: center;
+}
+
+.header__social {
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+}
+
+.header__social:hover {
+    opacity: 0.7;
+}
+
+.header__social_wa {
+    background-image: url(../images/whatsapp-logo.svg);
+    margin-left: 10px;
+}
+
+.header__social_tg {
+    margin-right: 10px;
+    background-image: url(../images/telegram-circle-blue-logo-16635.svg);
+}
+
+.header__order-btn {
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 15px;
+    border: none;
+    border-radius: 40px;
+    background-color: var(--col-main);
+    padding: 15px 80px;
+
+}
+
+.header__order-btn:hover {
+    opacity: 0.7;
+}
+
+.header__search-form {
+    width: calc(100% - 50px);
+    ;
+    height: 35px;
+    display: flex;
+}
+
+.header__search {
+    width: 90%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+    border: none;
+    background-color: rgba(126, 126, 126, 0.096);
+    box-sizing: border-box;
+    padding: 0 5px;
+    font-size: 18px;
+
+}
+
+.header__search:focus {
+    background-image: none;
+    border: none;
+}
+
+.header__search-btn {
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 10%;
+    background-image: url(../images/loup.svg);
+    background-repeat: no-repeat;
+    background-size: 35px;
+    border: none;
+    background-color: rgba(126, 126, 126, 0.096);
+    border-radius: 0 20px 20px 0;
+}
+
+.header__search-btn:hover {
+    opacity: 0.7;
+}
+
+.header__search-btn:active {
+    border: 2px solid black;
+}
+
+.header__basket-btn {
+    padding: 0;
+    background-image: url(../images/add-to-basket.svg);
+    background-size: cover;
+    background-position: center;
+    height: 35px;
+    width: 35px;
+    margin: auto 0;
+    border: none;
+    background-color: rgba(240, 248, 255, 0);
+    cursor: pointer;
+}
+
+.header__basket-btn:hover {
+    opacity: 0.7;
+}
