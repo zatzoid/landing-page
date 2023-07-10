@@ -1,5 +1,6 @@
 @import url(./vendor/vendor.css);
 @import url(./blocks/header.css);
+@import url(./blocks/heading-slider.css);
 
 html {
 
@@ -29,4 +30,5 @@ code {
   padding: 25px;
   max-width: 1280px;
   margin: auto;
+  margin-bottom: 1000px;
 }

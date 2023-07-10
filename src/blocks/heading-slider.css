@@ -1,0 +1,104 @@
+.hs-wrapper {
+    overflow: visible;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: var(--col-black);
+
+}
+
+.hs-wrapper_building::after {
+    opacity: 0.9;
+    transition: all 0.5s;
+    position: absolute;
+    content: '';
+    top: -50px;
+    right: 0;
+    width: 100%;
+    height: calc(100% + 50px);
+    background-image: url(../images/building1.png);
+    background-repeat: no-repeat;
+    background-position: top 0 right 0;
+    background-size: contain;
+    z-index: -5;
+}
+.hs-wrapper_minecraft::after {
+    position: absolute;
+    content: '';
+    top: -50px;
+    right: 0;
+    width: 100%;
+    height: calc(100% + 50px);
+    background-image: url(../images/building2.png);
+    background-repeat: no-repeat;
+    background-position: top 0 right 0;
+    background-size: contain;
+    z-index: -5;
+}
+.hs-wrapper_worker::after {
+    position: absolute;
+    content: '';
+    top: -50px;
+    right: 0;
+    width: 100%;
+    height: calc(100% + 50px);
+    background-image: url(../images/building3.png);
+    background-repeat: no-repeat;
+    background-position: top 0 right 0;
+    background-size: contain;
+    z-index: -5;
+}
+.hs-wrapper_time::after {
+    position: absolute;
+    content: '';
+    top: -50px;
+    right: 0;
+    width: 100%;
+    height: calc(100% + 50px);
+    background-image: url(../images/building4.png);
+    background-repeat: no-repeat;
+    background-position: top 0 right 0;
+    background-size: contain;
+    z-index: -5;
+}
+
+
+
+.hs-content {
+    height: 60%;
+    max-width: 60%;
+    gap: 10px;
+}
+
+.hs-paragraph {
+    font-size: 15px;
+    margin: 0;
+}
+
+.hs-heading {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.hs-subtitle {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.hs-btn {
+    font-size: 13px;
+    padding: 10px 70px;
+    border-radius: 20px;
+    background-color: rgba(240, 248, 255, 0);
+    border: 2px solid var(--col-gray);
+    font-weight: 500;
+    margin: 50px 0 0;
+    cursor: pointer;
+}
+
+.hs-btn:hover {
+    background-color: rgba(53, 53, 53, 0.3);
+}
