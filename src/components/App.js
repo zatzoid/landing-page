@@ -9,7 +9,7 @@ import Legacy from "./Legacy";
 
 
 function App() {
-  let i = 2
+  let i = 1
   const [headingContent, setHeadingContent] = React.useState(headingContentList[i]);
 
 
