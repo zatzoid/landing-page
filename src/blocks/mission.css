@@ -1,0 +1,67 @@
+.mission-wrapper {
+    width: 100%;
+    margin: auto;
+    background-color: var(--col-black);
+}
+
+.mission {
+    max-width: var(--min-display-w);
+    color: var(--col-white);
+    max-height: 700px;
+    margin: auto;
+    padding: 50px 150px 0 50px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(5, min-content);
+}
+
+.mission__img {
+    grid-row: 1 / span 5;
+    height: 700px;
+}
+
+.mission__heading {
+    font-weight: 400;
+    font-size: 30px;
+    width: 100%;
+}
+
+.mission__text {
+    font-size: 20px;
+    width: 100%;
+}
+
+.mission__grid-head {
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.mission__grid {
+    padding: 0 0 00;
+    margin: 0;
+    list-style: none;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: repeat(3, auto);
+    align-items: center;
+}
+
+.mission__grid-el {
+padding-left: 10px;
+    min-width: 150px;
+    font-size: 17px;
+    padding-right: 20px;
+    position: relative;
+    display: flex;
+   align-items: center;
+
+
+}
+
+.mission__grid-el-span {
+    padding-right: 10px;
+    font-size: 70px;
+    color: var(--col-gray);
+    font-weight: 200;
+}

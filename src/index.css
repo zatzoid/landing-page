@@ -1,6 +1,9 @@
 @import url(./vendor/vendor.css);
 @import url(./blocks/header.css);
 @import url(./blocks/heading-slider.css);
+@import url(./blocks/mission.css);
+@import url(./blocks/payment.css);
+@import url(./blocks/legacy.css);
 
 html {
 
@@ -8,6 +11,8 @@ html {
   --col-black: #2b2b2b;
   --col-gray: #808080;
   --col-main: #f2cb32;
+
+  --min-display-w: 1280px;
 
   background-color: var(--col-white);
 }
@@ -27,8 +32,8 @@ code {
 }
 
 .main {
-  padding: 25px;
-  max-width: 1280px;
+
+  max-width: 100%;
   margin: auto;
   margin-bottom: 1000px;
 }

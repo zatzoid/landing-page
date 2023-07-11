@@ -1,0 +1,57 @@
+.payment-wrapper {
+    width: 100%;
+    background-color: var(--col-main);
+}
+
+.payment {
+    max-width: var(--min-display-w);
+    padding: 25px 50px;
+    margin: auto;
+
+}
+
+.payment__heading {
+    margin: 0;
+    text-align: center;
+}
+
+.payment__grid {
+    margin: auto;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(250px, 1fr));
+
+
+
+}
+
+.payment__el {
+    position: relative;
+    text-align: center;
+}
+
+.payment__el-img {
+    width: 100px;
+}
+
+.payment__el:after {
+
+    z-index: 555;
+    position: absolute;
+    content: '';
+    top: 50px;
+    right: -100px;
+    width: 200px;
+    height: 50px;
+    background-image: url(../images/arrow-long.svg);
+    background-size: 200px 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+}
+
+.payment__el:last-child::after {
+   display: none;
+}

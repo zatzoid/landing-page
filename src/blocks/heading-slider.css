@@ -1,4 +1,7 @@
 .hs-wrapper {
+    padding: 25px;
+    max-width: var(--min-display-w);
+    margin: auto;
     overflow: visible;
     height: 500px;
     position: relative;
@@ -14,7 +17,7 @@
     position: absolute;
     content: '';
     top: -50px;
-    right: 0;
+    right: 50px;
     width: 100%;
     height: calc(100% + 50px);
     background-image: url(../images/building1.png);
@@ -40,7 +43,7 @@
     position: absolute;
     content: '';
     top: -50px;
-    right: 0;
+    right: 50px;
     width: 100%;
     height: calc(100% + 50px);
     background-image: url(../images/building3.png);
