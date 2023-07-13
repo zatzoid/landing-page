@@ -4,6 +4,8 @@
 @import url(./blocks/mission.css);
 @import url(./blocks/payment.css);
 @import url(./blocks/legacy.css);
+@import url(./blocks/catalog.css);
+@import url(./blocks/product.css);
 
 html {
 
