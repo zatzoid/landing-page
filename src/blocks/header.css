@@ -94,10 +94,14 @@
 
 .header__social_wa {
     background-image: url(../images/whatsapp-logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
     margin-left: 10px;
 }
 
 .header__social_tg {
+    background-size: contain;
+    background-repeat: no-repeat;
     margin-right: 10px;
     background-image: url(../images/telegram-circle-blue-logo-16635.svg);
 }
@@ -141,7 +145,7 @@
 .header__search:focus {
     background-image: none;
     border: none;
-    background-color: rgb(211, 211, 211)
+    background-color: var(--col-white);
 }
 
 .header__search-btn {

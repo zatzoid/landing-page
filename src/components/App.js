@@ -11,22 +11,34 @@ import Catalog from "./catalog";
 
 
 function App() {
-  let i = 2
-  const [headingContent, setHeadingContent] = useState(headingContentList[i]);
+  const [headingContent, setHeadingContent] = useState(headingContentList.building);
+  const swtichHeadingSlider = (i) => {
+    setHeadingContent(i)
+  }
+  const [headingIndex, setHeadingIndex] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const nextIndex = (headingIndex + 1) % Object.keys(headingContentList).length;
+      setHeadingIndex(nextIndex);
+      setHeadingContent(headingContentList[nextIndex]);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+
+
+
   const [legacyEl, setLegacyEl] = useState(legacyList.placeHold)
-
-
- const switchLegacy =  (el)=> {
-  
+  const switchLegacy = (el) => {
     setLegacyEl(el)
   }
 
-  const [catalog , setCatalog] =useState('block')
+  const [catalog, setCatalog] = useState('block')
 
-  const switchCatalog = (el)=>{
-  console.log(`switch to ${el}`)
-  setCatalog(el)
-}
+  const switchCatalog = (el) => {
+    setCatalog(el)
+  }
 
 
 
@@ -35,11 +47,11 @@ function App() {
   return (
     <main className="main">
       <Header />
-      <HeadingSlider headingContent={headingContent} />
+      <HeadingSlider headingContent={headingContent} swtichHeadingSlider={swtichHeadingSlider} />
       <Mission />
       <Payment />
-      <Legacy legacyEl={legacyEl}  switchLegacy={switchLegacy}/>
-      <Catalog catalog={catalog} switchCatalog={switchCatalog} productList={productList}/>
+      <Legacy legacyEl={legacyEl} switchLegacy={switchLegacy} />
+      <Catalog catalog={catalog} switchCatalog={switchCatalog} productList={productList} />
     </main>
   );
 }

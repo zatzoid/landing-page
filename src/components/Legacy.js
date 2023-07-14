@@ -15,18 +15,15 @@ export default function Legacy(props) {
                 setLegacyDescClass("legacy__desc legacy__desc_transform-right");
             }, 500);
         }
+        
+        setTimeout(() => {
+            setRenderText(props.legacyEl)
+        }, 250)
     }, [props.legacyEl]);
 
     const [renderText, setRenderText] = useState(props.legacyEl)
     //замена текста через 250, для красоты, что бы текст менялся за кулисами
-    useEffect(() => { 
-
-        setTimeout(() => {
-            setRenderText(props.legacyEl)
-        }, 250)
-
-
-    }, [props.legacyEl])
+ 
 
 
     return (
