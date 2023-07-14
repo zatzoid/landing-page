@@ -1,16 +1,40 @@
 {
   "files": {
-    "main.css": "/landing-page/static/css/main.073c9b0a.css",
-    "main.js": "/landing-page/static/js/main.a7cbee63.js",
+    "main.css": "/landing-page/static/css/main.37423be7.css",
+    "main.js": "/landing-page/static/js/main.748d56fb.js",
     "static/js/787.6606bfd5.chunk.js": "/landing-page/static/js/787.6606bfd5.chunk.js",
-    "static/media/logo.svg": "/landing-page/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/legacy1.jpg": "/landing-page/static/media/legacy1.11ee93eef17d32354666.jpg",
+    "static/media/building3.png": "/landing-page/static/media/building3.1abc55e079b6cc193a1f.png",
+    "static/media/building4.png": "/landing-page/static/media/building4.01208d4113e757db451b.png",
+    "static/media/mission.png": "/landing-page/static/media/mission.a3f27fa2dbf67288652b.png",
+    "static/media/building2.png": "/landing-page/static/media/building2.f3f6d185d27d01c20a94.png",
+    "static/media/building1.png": "/landing-page/static/media/building1.7d6e6c18e1d2a9f865f5.png",
+    "static/media/legacy2.jpeg": "/landing-page/static/media/legacy2.bda7dbbf1a5781a148f2.jpeg",
+    "static/media/legacy3.jpg": "/landing-page/static/media/legacy3.360cbfc3fe2b1226163b.jpg",
+    "static/media/logo.png": "/landing-page/static/media/logo.59725e029f0999bd3100.png",
+    "static/media/icon-year.svg": "/landing-page/static/media/icon-year.7abdc101b32d7ef0784716a42cc6a9f6.svg",
+    "static/media/icon-new.svg": "/landing-page/static/media/icon-new.5827f59877aac9b61463594881931a6d.svg",
+    "static/media/time-date.svg": "/landing-page/static/media/time-date.c6da0622d9336c11987b8ce055f497d9.svg",
+    "static/media/icon-best-item.svg": "/landing-page/static/media/icon-best-item.7696c208832c40c48b4a8f4ce772fca9.svg",
+    "static/media/delivery.svg": "/landing-page/static/media/delivery.e632151aa644c28a90c4fb204d98a8bc.svg",
+    "static/media/monito-click.svg": "/landing-page/static/media/monito-click.f9417d92eb3751fef1906f6b8ed5c988.svg",
+    "static/media/payment.svg": "/landing-page/static/media/payment.74bf76f39791909026afaddcd258a3e7.svg",
+    "static/media/product.svg": "/landing-page/static/media/product.1272938549775607dd5a139697f3c233.svg",
+    "static/media/whatsapp-logo.svg": "/landing-page/static/media/whatsapp-logo.31583094255a1176a541.svg",
+    "static/media/add-to-basket.svg": "/landing-page/static/media/add-to-basket.e89ee0cf5b9331a823d4.svg",
+    "static/media/telegram-circle-blue-logo-16635.svg": "/landing-page/static/media/telegram-circle-blue-logo-16635.b0472aa55ad303b67190.svg",
+    "static/media/block-catalog.svg": "/landing-page/static/media/block-catalog.5f0162aea354b4212200.svg",
+    "static/media/line-catalog.svg": "/landing-page/static/media/line-catalog.e65d6dbf81e17a190567.svg",
+    "static/media/loup.svg": "/landing-page/static/media/loup.9ab2ce736a98b959ef78.svg",
+    "static/media/arrow-long.svg": "/landing-page/static/media/arrow-long.f534009d332c0c1b64e7.svg",
+    "static/media/location.svg": "/landing-page/static/media/location.9d9048604df02581e07d.svg",
     "index.html": "/landing-page/index.html",
-    "main.073c9b0a.css.map": "/landing-page/static/css/main.073c9b0a.css.map",
-    "main.a7cbee63.js.map": "/landing-page/static/js/main.a7cbee63.js.map",
+    "main.37423be7.css.map": "/landing-page/static/css/main.37423be7.css.map",
+    "main.748d56fb.js.map": "/landing-page/static/js/main.748d56fb.js.map",
     "787.6606bfd5.chunk.js.map": "/landing-page/static/js/787.6606bfd5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.a7cbee63.js"
+    "static/css/main.37423be7.css",
+    "static/js/main.748d56fb.js"
   ]
 }
