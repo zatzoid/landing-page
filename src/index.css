@@ -34,8 +34,8 @@ code {
 }
 
 .main {
-
+position: relative;
   max-width: 100%;
   margin: auto;
-  margin-bottom: 1000px;
+
 }

@@ -15,7 +15,7 @@ function App() {
   const swtichHeadingSlider = (i) => {
     setHeadingContent(i)
   }
-  const [headingIndex, setHeadingIndex] = useState(0);
+  /* const [headingIndex, setHeadingIndex] = useState(0);
   useEffect(() => {
     const interval = setInterval(() => {
       const nextIndex = (headingIndex + 1) % Object.keys(headingContentList).length;
@@ -24,7 +24,7 @@ function App() {
     }, 3000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, []); */
 
 
 

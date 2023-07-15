@@ -186,3 +186,36 @@
 .header__basket-btn:hover {
     opacity: 0.7;
 }
+
+@media screen and (max-width: 1150px) {
+    .header {
+        --max-size: 11px;
+    }
+
+    .header__logo {
+        width: 220px;
+    }
+
+    .header__nav {
+        gap: 10px;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .header {
+        height: 70px;
+        position: absolute;
+    }
+
+    .header__nav-el,
+    .header__telephone,
+    .header__social,
+    .header__order-btn,
+    .header__adres,
+    .header__search {
+        display: none;
+    }
+
+
+}

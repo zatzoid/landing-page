@@ -25,20 +25,21 @@ export default function HeadingSlider(props) {
 
     return (
         <div className={` hs-wrapper `}>
-            <img
-                className={`hs__img-background ${choicenBlock.includes('building') && 'hs-el_active'}`} src={imgBuild} />
-            <img
-                className={`hs__img-background ${choicenBlock.includes('minecraft') && 'hs-el_active'}`} src={imgMine} />
-            <img
-                className={`hs__img-background ${choicenBlock.includes('worker') && 'hs-el_active'}`} src={imgWork} />
-            <img
-                className={`hs__img-background ${choicenBlock.includes('time') && 'hs-el_active'}`} src={imgTime} />
             <div className={`hs-content ${renderText && 'hs-el_active'}`}>
                 <p className='hs-paragraph' >{textValue.paragraph}</p>
                 <h1 className='hs-heading'>{textValue.heading}</h1>
                 <h2 className='hs-subtitle'>{textValue.subhead}</h2>
                 {choicenBlock.includes('building') && <a><button className="hs-btn">ЗАКАЗАТЬ</button></a>}
             </div>
+            <img
+                className={`hs__img-background ${choicenBlock.includes('building') && 'hs-el_active-bg'}`} src={imgBuild} />
+            <img
+                className={`hs__img-background ${choicenBlock.includes('minecraft') && 'hs-el_active-bg'}`} src={imgMine} />
+            <img
+                className={`hs__img-background ${choicenBlock.includes('worker') && 'hs-el_active-bg'}`} src={imgWork} />
+            <img
+                className={`hs__img-background ${choicenBlock.includes('time') && 'hs-el_active-bg'}`} src={imgTime} />
+            
             <div className="hs-slider__switch-btn-block">
                 <button onClick={() => { props.swtichHeadingSlider(headingContentList.building) }}
                     className={`hs-slider__switch-btn ${choicenBlock.includes('building') && 'hs-slider__switch-btn_active'}`} ></button>
