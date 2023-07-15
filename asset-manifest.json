@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/landing-page/static/css/main.37423be7.css",
-    "main.js": "/landing-page/static/js/main.748d56fb.js",
+    "main.css": "/landing-page/static/css/main.dc068d3a.css",
+    "main.js": "/landing-page/static/js/main.5a08dd34.js",
     "static/js/787.6606bfd5.chunk.js": "/landing-page/static/js/787.6606bfd5.chunk.js",
     "static/media/legacy1.jpg": "/landing-page/static/media/legacy1.11ee93eef17d32354666.jpg",
     "static/media/building3.png": "/landing-page/static/media/building3.1abc55e079b6cc193a1f.png",
@@ -23,18 +23,18 @@
     "static/media/whatsapp-logo.svg": "/landing-page/static/media/whatsapp-logo.31583094255a1176a541.svg",
     "static/media/add-to-basket.svg": "/landing-page/static/media/add-to-basket.e89ee0cf5b9331a823d4.svg",
     "static/media/telegram-circle-blue-logo-16635.svg": "/landing-page/static/media/telegram-circle-blue-logo-16635.b0472aa55ad303b67190.svg",
-    "static/media/block-catalog.svg": "/landing-page/static/media/block-catalog.5f0162aea354b4212200.svg",
-    "static/media/line-catalog.svg": "/landing-page/static/media/line-catalog.e65d6dbf81e17a190567.svg",
+    "static/media/block-catalog.svg": "/landing-page/static/media/block-catalog.614eeecc50c453925ca9.svg",
+    "static/media/line-catalog.svg": "/landing-page/static/media/line-catalog.7090aca62b7e003f7677.svg",
     "static/media/loup.svg": "/landing-page/static/media/loup.9ab2ce736a98b959ef78.svg",
     "static/media/arrow-long.svg": "/landing-page/static/media/arrow-long.f534009d332c0c1b64e7.svg",
     "static/media/location.svg": "/landing-page/static/media/location.9d9048604df02581e07d.svg",
     "index.html": "/landing-page/index.html",
-    "main.37423be7.css.map": "/landing-page/static/css/main.37423be7.css.map",
-    "main.748d56fb.js.map": "/landing-page/static/js/main.748d56fb.js.map",
+    "main.dc068d3a.css.map": "/landing-page/static/css/main.dc068d3a.css.map",
+    "main.5a08dd34.js.map": "/landing-page/static/js/main.5a08dd34.js.map",
     "787.6606bfd5.chunk.js.map": "/landing-page/static/js/787.6606bfd5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.37423be7.css",
-    "static/js/main.748d56fb.js"
+    "static/css/main.dc068d3a.css",
+    "static/js/main.5a08dd34.js"
   ]
 }
