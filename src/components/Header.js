@@ -1,19 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from '../images/logo.png'
+import { Link, NavLink } from "react-router-dom";
 
 export default function Header() {
+    const [showMenu, setShowMobile] = useState(false)
+    function switchMenu() {
+        if (!showMenu) {
+            setShowMobile(true)
+        }
+        else {
+            setShowMobile(false)
+        }
+    }
 
     return (<div className="header">
+
         <div className="header__container">
             <p className="header__adres">Москва, ул.Пушкина, д.Колотушкина </p> {/* before img */}
-            <img className="header__logo" src={logo} />
+            <Link to='/'><img className="header__logo" src={logo} /></Link>
         </div>
-        <ul className="header__nav">
-            <li className="header__nav-el">Продукция</li>
-            <li className="header__nav-el">О компании</li>
-            <li className="header__nav-el">Отзывы</li>
-            <li className="header__nav-el">Контакты</li>
-        </ul>
+
+        <div className={`header__nav ${showMenu && 'header__nav_active'}`}>
+            <button onClick={()=>{switchMenu()}} className="header__nav-menu-btn"></button>
+            <NavLink to='/menu' onClick={()=>{switchMenu()}} className={({ isActive }) => ` header__nav-el ${isActive ? "header__nav-el_active" : ""}`}>Продукция</NavLink>
+            <NavLink to='/about' onClick={()=>{switchMenu()}} className={({ isActive }) => ` header__nav-el ${isActive ? "header__nav-el_active" : ""}`}>О компании</NavLink>
+            <NavLink to='/feedback' onClick={()=>{switchMenu()}} className={({ isActive }) => ` header__nav-el ${isActive ? "header__nav-el_active" : ""}`}>Отзывы</NavLink>
+            <NavLink to='contacts' onClick={()=>{switchMenu()}} className={({ isActive }) => ` header__nav-el ${isActive ? "header__nav-el_active" : ""}`}>Контакты</NavLink>
+        </div>
         <div className="header__container">
             <div className="header__container-top">
                 <p className="header__telephone">8 (800) 555 35 35</p>

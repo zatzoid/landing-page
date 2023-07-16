@@ -6,6 +6,7 @@
 @import url(./blocks/legacy.css);
 @import url(./blocks/catalog.css);
 @import url(./blocks/product.css);
+@import url(./blocks/routes.css);
 
 html {
 

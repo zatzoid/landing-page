@@ -1,11 +1,17 @@
 import React, { useEffect, useState } from "react";
+
 import Header from "./Header";
-import HeadingSlider from "./HeadingSlider";
+
 import { headingContentList, legacyList, productList } from "../utils/constants";
-import Mission from "./Mission";
-import Payment from "./Payment";
-import Legacy from "./Legacy";
-import Catalog from "./catalog";
+
+import { Route, Routes } from "react-router-dom";
+import Main from "./Main";
+import Menu from "./menu";
+import About from "./About";
+import FeedBack from "./FeedBack";
+import Contacts from "./Contacts";
+import Error from "./Error";
+
 
 
 
@@ -15,19 +21,15 @@ function App() {
   const swtichHeadingSlider = (i) => {
     setHeadingContent(i)
   }
-  /* const [headingIndex, setHeadingIndex] = useState(0);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      const nextIndex = (headingIndex + 1) % Object.keys(headingContentList).length;
-      setHeadingIndex(nextIndex);
-      setHeadingContent(headingContentList[nextIndex]);
-    }, 3000);
 
-    return () => clearInterval(interval);
-  }, []); */
+useEffect(()=>{
+setTimeout(()=>{
+  swtichHeadingSlider(headingContentList.minecraft)
+}, 3000)
+  
 
 
-
+}, [])
 
   const [legacyEl, setLegacyEl] = useState(legacyList.placeHold)
   const switchLegacy = (el) => {
@@ -47,11 +49,19 @@ function App() {
   return (
     <main className="main">
       <Header />
-      <HeadingSlider headingContent={headingContent} swtichHeadingSlider={swtichHeadingSlider} />
-      <Mission />
-      <Payment />
-      <Legacy legacyEl={legacyEl} switchLegacy={switchLegacy} />
-      <Catalog catalog={catalog} switchCatalog={switchCatalog} productList={productList} />
+      <Routes>
+        <Route path="menu" element={<Menu catalog={catalog} switchCatalog={switchCatalog} productList={productList} />} />
+        <Route path="about" element={<About />} />
+        <Route path="feedback" element={<FeedBack />} />
+        <Route path="contacts" element={<Contacts />} />
+        <Route path="/" element={<Main headingContent={headingContent}
+          swtichHeadingSlider={swtichHeadingSlider}
+          legacyEl={legacyEl} switchLegacy={switchLegacy}
+          catalog={catalog} switchCatalog={switchCatalog}
+          productList={productList} />} />
+           <Route path="*" element={<Error />} />
+
+      </Routes>
     </main>
   );
 }
