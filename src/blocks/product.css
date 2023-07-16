@@ -125,7 +125,7 @@
 
 .product__desc {
     margin: 0;
-    grid-row: 1;
+    grid-row: 2;
     grid-area: desc;
     font-size: 20px;
 }
@@ -134,6 +134,7 @@
     max-height: 250px;
     font-size: 30px;
     padding: 0;
+    grid-column: 2 / 2;
 }
 
 .product__price_line {
@@ -153,7 +154,7 @@
 
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 450px) {
 
     .product__name_line {
         font-size: 15px;

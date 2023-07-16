@@ -112,7 +112,7 @@
     transform: translateY(-100px);
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 450px) {
     .legacy {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 480px;

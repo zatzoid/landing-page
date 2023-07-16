@@ -54,7 +54,7 @@ setTimeout(()=>{
         <Route path="about" element={<About />} />
         <Route path="feedback" element={<FeedBack />} />
         <Route path="contacts" element={<Contacts />} />
-        <Route path="/" element={<Main headingContent={headingContent}
+        <Route path="landing-page" element={<Main headingContent={headingContent}
           swtichHeadingSlider={swtichHeadingSlider}
           legacyEl={legacyEl} switchLegacy={switchLegacy}
           catalog={catalog} switchCatalog={switchCatalog}

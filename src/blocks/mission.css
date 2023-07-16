@@ -65,7 +65,7 @@
     font-weight: 200;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 450px) {
 
 .mission__img{
 display: none;

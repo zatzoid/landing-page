@@ -17,7 +17,7 @@ export default function Header() {
 
         <div className="header__container">
             <p className="header__adres">Москва, ул.Пушкина, д.Колотушкина </p> {/* before img */}
-            <Link to='/'><img className="header__logo" src={logo} /></Link>
+            <Link to='/landing-page'><img className="header__logo" src={logo} /></Link>
         </div>
 
         <div className={`header__nav ${showMenu && 'header__nav_active'}`}>
