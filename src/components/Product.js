@@ -24,7 +24,7 @@ export default class Product extends React.Component {
                 <div className="product__icon">
                     {this.el.special.best && <div className="product__icon-title" data-title="Самый лучший"><img className={`product__icon-el ${this.line && 'product__icon-el_line'}`} src={best} /></div>}
                         {this.el.special.new && <div className="product__icon-title" data-title="Самый новый"><img className={`product__icon-el ${this.line && 'product__icon-el_line'}`} src={iconNew} /></div>}
-                            {this.el.special.year && <div className="product__icon-title" data-title="Самый долго гаранируемый"><img className={`product__icon-el ${this.line && 'product__icon-el_line'}`} src={year} /></div>}
+                            {this.el.special.year && <div className="product__icon-title" data-title="Самый гаранируемый"><img className={`product__icon-el ${this.line && 'product__icon-el_line'}`} src={year} /></div>}
                             </div>
             </li>)
     }
